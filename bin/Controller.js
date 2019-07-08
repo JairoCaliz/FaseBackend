@@ -12,7 +12,7 @@ class Controller{
             "mongodb+srv://jcalizhoyos:1069495296caliz@cluster0-ul61k.mongodb.net/projectDB?retryWrites=true&w=majority",
             {userNewUrlParser:true}
         );
-        console.log("Conectados a la base de datos")
+        console.log("conectado a la base de datos")
 
        } catch(e){
            console.error(e)
