@@ -34,6 +34,22 @@ class Controller{
        })
    }
 
+   getGrado(res){
+       Grados.find({}, (err, grado)=>{
+           if(err) throw err;
+
+           res.send(grado);
+       })
+   }
+
+   postGrado(req, res){
+       let grados = req.body.grado;
+       Grados.create(grados, (err, newGrados)=>{
+             if(err) throw err;
+             res.send({nU:newGrados})
+       })
+   }
+
 }
 
 exports.controller = new Controller()

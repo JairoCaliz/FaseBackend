@@ -16,6 +16,13 @@ app.post("/users", (req, res)=>{
     controller.postUsers(req, res)
 })
 
+app.get("/grados", (req, res)=>{
+    controller.getGrados(res);
+})
+app.post("/grados", (req, res)=>{
+    controller.postGrados(req, res)
+})
+
 app.get("/productos_multimedia/usuarios/:nombre_grado/", (req, res)=>{
     var nombre_grado = req.params.nombre_grado;
     console.log(nombre_grado)
