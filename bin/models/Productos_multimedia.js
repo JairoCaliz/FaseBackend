@@ -9,12 +9,12 @@ const producto_multimediaSchema = new Schema({
 
     id_usuario:{
         type:[Schema.Types.ObjectId],
-        ref:""
+        ref:"User"
     },
 
     id_grado:{
         type:[Schema.Types.ObjectId],
-        ref:""
+        ref:"Grados"
     }
 })
 
